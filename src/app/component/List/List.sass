@@ -1,0 +1,37 @@
+.list
+  display: flex
+  flex-direction: column
+  gap: 10px
+  margin: 10px 0px
+  flex-wrap: wrap
+
+  &--flex
+    flex-direction: row
+    justify-content: center
+
+  &--reversed
+    flex-direction: row-reverse
+
+    .list-item .list-content
+      width: unset
+
+  .list-item
+    display: flex
+    align-items: center
+    gap: 10px
+
+    .list-index
+      width: 35px
+      height: 35px
+      background: #DABEA2
+      border-radius: 6px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 20px
+      color: #FFF7EB
+
+    .list-content
+      width: 100%
+      color: #fff
+      font-size: 18px
